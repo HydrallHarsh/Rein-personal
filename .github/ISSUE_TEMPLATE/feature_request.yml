@@ -3,11 +3,6 @@ description: Suggest a new feature or enhancement for Rein
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thank you for suggesting a feature! Please fill out the form below.  
-
   - type: textarea
     id: problem
     attributes:
@@ -32,39 +27,6 @@ body:
       label: Alternatives Considered
       description: Describe any alternative solutions or features you've considered.
 
-  - type: dropdown
-    id: category
-    attributes:
-      label: Feature Category
-      description: What area of Rein does this feature relate to?
-      options:
-        - Trackpad / Cursor Control
-        - Keyboard Input
-        - Scroll Functionality
-        - Connection / Networking
-        - Settings / Configuration
-        - UI / User Experience
-        - Cross-Platform Support
-        - Wayland Compatibility
-        - Performance
-        - Documentation
-        - Other
-    validations:
-      required: true
-
-  - type: dropdown
-    id: platforms
-    attributes:
-      label: Affected Platforms
-      description: Which platforms would benefit from this feature?
-      multiple: true
-      options:
-        - Windows
-        - macOS
-        - Linux (X11)
-        - Linux (Wayland)
-        - All Platforms
-
   - type: textarea
     id: context
     attributes:
@@ -77,6 +39,4 @@ body:
       label: Checklist
       options:
         - label: I have searched for existing feature requests to avoid duplicates
-          required: true
-        - label: I have joined the [Discord server](https://discord.gg/hjUhu33uAn)
           required: true

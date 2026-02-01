@@ -3,11 +3,6 @@ description: Report a bug or unexpected behavior in Rein
 title: "[Bug]: "
 labels: ["bug", "triage"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thank you for reporting a bug! Please fill out the form below.
-
   - type: textarea
     id: description
     attributes:
@@ -36,15 +31,6 @@ body:
       label: Expected Behavior
       description: What did you expect to happen?
       placeholder: Describe what should happen...
-    validations:
-      required: true
-
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual Behavior
-      description: What actually happened?
-      placeholder: Describe what actually happened...
     validations:
       required: true
 
@@ -101,6 +87,4 @@ body:
       label: Checklist
       options:
         - label: I have searched for existing issues to avoid duplicates
-          required: true
-        - label: I have joined the [Discord server](https://discord.gg/hjUhu33uAn)
           required: true
